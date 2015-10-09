@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_coding_tasks">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+		android:id="@+id/btnLogin"
+        android:onClick="onLoginButtonClicked"
+		android:background="@drawable/btn_main_login"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+		android:id="@+id/btnChat"
+        android:onClick="onChatButtonClicked"
+        android:background="@drawable/btn_main_chat"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnAnimationTest"
+        android:onClick="onAnimationTestButtonClicked"
+        android:background="@drawable/btn_main_animation"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringCodingTasks"
+        android:id="@+id/lblCodingTasks"
+        android:textSize="22sp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnChat"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

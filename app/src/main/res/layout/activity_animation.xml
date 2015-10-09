@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apppartner.androidprogrammertest.AnimationActivity"
+    android:background="@drawable/bg_animation"
+    android:id="@+id/rootLayout">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/toolbar_animation"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar_animation"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="340dp"
+        android:background="@drawable/bg_cell_animation_test">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animate the App Partner Icon.Make it fade to 0% alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged around the screen by touching and dragging."
+        android:id="@+id/txtAnimationPrompt"
+        android:textSize="19sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animationBonus"
+        android:id="@+id/txtAnimationBonus"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgAppPartner"
+        android:background="@drawable/ic_apppartner"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/animation_image"/>
+
+    <Button
+        android:layout_width="@dimen/widget_width"
+        android:layout_height="@dimen/widget_height"
+        android:id="@+id/button"
+        android:onClick="onFadeClicked"
+        android:background="@drawable/btn_fade"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

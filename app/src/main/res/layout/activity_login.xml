@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apppartner.androidprogrammertest.LoginActivity"
+    android:background="@drawable/bg_login">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/toolbar_login"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/txtUserName"
+        android:layout_marginTop="123dp"
+        android:hint="@string/stringUserName"
+        android:background="@drawable/graphic_input"
+        android:layout_below="@+id/toolbar_login"
+        android:textSize="30sp"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_alignStart="@+id/txtPassword"/>
+
+    <requestFocus/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:hint="@string/stringPassword"
+        android:background="@drawable/graphic_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="@dimen/widget_width"
+        android:layout_height="@dimen/widget_height"
+        android:id="@+id/btnLoginActivity"
+        android:background="@drawable/btn_login"
+        android:onClick="onbtnLoginClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"/>
+
+</RelativeLayout>

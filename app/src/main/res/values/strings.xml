@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidProgrammerTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="stringCodingTasks">CODING TASKS</string>
+    <string name="stringUserName">username</string>
+    <string name="stringPassword">password</string>
+    <string name="dialogPositiveString">OK</string>
+    <string name="animationBonus">BONUS POINTS FOR CREATIVITY</string>
+    <string name="animation_image">animation image</string>
+    <string name="avatar_image">avatar image</string>
+    <!--<string name="animation_text">Animate the App Partner Icon.Make it fade to 0%
+    alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged
+    around the screen by touching and dragging.</string>-->
+</resources>
